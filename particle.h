@@ -17,7 +17,7 @@ public:
     void applyForce(float fy) { vy -= fy; }
     void update() { x += vx; y += vy; }
     void show() {
-        ellipse(x, y, r, r);
+        ellipse(x, y, 2 * r, 2 * r);
     }
     void boundary() {
         if (x < r) {
