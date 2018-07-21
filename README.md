@@ -3,7 +3,7 @@
 [Processing](https://processing.org "Processing") is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.
 [libProcessing](https://github.com/gh-code/libProcessing "libProcessing") is a C++ library for Processing and this is an example.
 
-![Demonstration](https://raw.githubusercontent.com/gh-code/libProcessingTemplate/master/images/capture.png)
+![Demonstration](https://raw.githubusercontent.com/gh-code/libProcessingTemplate/master/images/capture.gif)
 
 ## Requirement
 * Qt 5
