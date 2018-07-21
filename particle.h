@@ -10,13 +10,15 @@ const float gravity = -0.098;
 class Particle
 {
 public:
-    Particle(float x, float y) : r(16), vx(0), vy(0), x(x), y(y) {}
+    Particle(float x, float y) : r(8), vx(0), vy(0), x(x), y(y) {}
 
+    void setColor(const color &c_) { c = c_; }
     void setPosition(float x_, float y_) { x = x_; y = y_; }
     void setVelocity(float vx_, float vy_) { vx = vx_; vy = vy_; }
     void applyForce(float fy) { vy -= fy; }
     void update() { x += vx; y += vy; }
     void show() {
+        fill(c);
         ellipse(x, y, 2 * r, 2 * r);
     }
     void boundary() {
@@ -40,6 +42,7 @@ public:
             vx *= 0.9;
     }
 
+    color c;
     float r;
     float vx;
     float vy;
